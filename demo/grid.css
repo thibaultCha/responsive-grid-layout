@@ -1,0 +1,338 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  width: 590px;
+  margin: 0 auto;
+  padding: 0;
+}
+.container .row {
+  margin: 0 0 10px -10px;
+}
+.container .column:after,
+.container .row:after {
+  content: ' ';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* Loop */@media (min-width: 991px) {
+  .col_width_12 {
+    float: left;
+    display: inline;
+    margin: 0 0 0 10px;
+    background-color: #ccc;
+    width: 590px;
+  }
+  .col_width_12:before {
+    content: "12";
+  }
+  .col_offset_by_12 {
+    margin-left: 610px;
+  }
+  .col_width_11 {
+    float: left;
+    display: inline;
+    margin: 0 0 0 10px;
+    background-color: #ccc;
+    width: 540px;
+  }
+  .col_width_11:before {
+    content: "11";
+  }
+  .col_offset_by_11 {
+    margin-left: 560px;
+  }
+  .col_width_10 {
+    float: left;
+    display: inline;
+    margin: 0 0 0 10px;
+    background-color: #ccc;
+    width: 490px;
+  }
+  .col_width_10:before {
+    content: "10";
+  }
+  .col_offset_by_10 {
+    margin-left: 510px;
+  }
+  .col_width_9 {
+    float: left;
+    display: inline;
+    margin: 0 0 0 10px;
+    background-color: #ccc;
+    width: 440px;
+  }
+  .col_width_9:before {
+    content: "9";
+  }
+  .col_offset_by_9 {
+    margin-left: 460px;
+  }
+  .col_width_8 {
+    float: left;
+    display: inline;
+    margin: 0 0 0 10px;
+    background-color: #ccc;
+    width: 390px;
+  }
+  .col_width_8:before {
+    content: "8";
+  }
+  .col_offset_by_8 {
+    margin-left: 410px;
+  }
+  .col_width_7 {
+    float: left;
+    display: inline;
+    margin: 0 0 0 10px;
+    background-color: #ccc;
+    width: 340px;
+  }
+  .col_width_7:before {
+    content: "7";
+  }
+  .col_offset_by_7 {
+    margin-left: 360px;
+  }
+  .col_width_6 {
+    float: left;
+    display: inline;
+    margin: 0 0 0 10px;
+    background-color: #ccc;
+    width: 290px;
+  }
+  .col_width_6:before {
+    content: "6";
+  }
+  .col_offset_by_6 {
+    margin-left: 310px;
+  }
+  .col_width_5 {
+    float: left;
+    display: inline;
+    margin: 0 0 0 10px;
+    background-color: #ccc;
+    width: 240px;
+  }
+  .col_width_5:before {
+    content: "5";
+  }
+  .col_offset_by_5 {
+    margin-left: 260px;
+  }
+  .col_width_4 {
+    float: left;
+    display: inline;
+    margin: 0 0 0 10px;
+    background-color: #ccc;
+    width: 190px;
+  }
+  .col_width_4:before {
+    content: "4";
+  }
+  .col_offset_by_4 {
+    margin-left: 210px;
+  }
+  .col_width_3 {
+    float: left;
+    display: inline;
+    margin: 0 0 0 10px;
+    background-color: #ccc;
+    width: 140px;
+  }
+  .col_width_3:before {
+    content: "3";
+  }
+  .col_offset_by_3 {
+    margin-left: 160px;
+  }
+  .col_width_2 {
+    float: left;
+    display: inline;
+    margin: 0 0 0 10px;
+    background-color: #ccc;
+    width: 90px;
+  }
+  .col_width_2:before {
+    content: "2";
+  }
+  .col_offset_by_2 {
+    margin-left: 110px;
+  }
+  .col_width_1 {
+    float: left;
+    display: inline;
+    margin: 0 0 0 10px;
+    background-color: #ccc;
+    width: 40px;
+  }
+  .col_width_1:before {
+    content: "1";
+  }
+  .col_offset_by_1 {
+    margin-left: 60px;
+  }
+}
+@media (max-width: 990px) {
+  .m_col_width_12 {
+    float: left;
+    display: inline;
+    margin: 0 0 0 10px;
+    background-color: #ccc;
+    width: 590px;
+  }
+  .m_col_width_12:before {
+    content: "12";
+  }
+  .m_col_offset_by_12 {
+    margin-left: 610px;
+  }
+  .m_col_width_11 {
+    float: left;
+    display: inline;
+    margin: 0 0 0 10px;
+    background-color: #ccc;
+    width: 540px;
+  }
+  .m_col_width_11:before {
+    content: "11";
+  }
+  .m_col_offset_by_11 {
+    margin-left: 560px;
+  }
+  .m_col_width_10 {
+    float: left;
+    display: inline;
+    margin: 0 0 0 10px;
+    background-color: #ccc;
+    width: 490px;
+  }
+  .m_col_width_10:before {
+    content: "10";
+  }
+  .m_col_offset_by_10 {
+    margin-left: 510px;
+  }
+  .m_col_width_9 {
+    float: left;
+    display: inline;
+    margin: 0 0 0 10px;
+    background-color: #ccc;
+    width: 440px;
+  }
+  .m_col_width_9:before {
+    content: "9";
+  }
+  .m_col_offset_by_9 {
+    margin-left: 460px;
+  }
+  .m_col_width_8 {
+    float: left;
+    display: inline;
+    margin: 0 0 0 10px;
+    background-color: #ccc;
+    width: 390px;
+  }
+  .m_col_width_8:before {
+    content: "8";
+  }
+  .m_col_offset_by_8 {
+    margin-left: 410px;
+  }
+  .m_col_width_7 {
+    float: left;
+    display: inline;
+    margin: 0 0 0 10px;
+    background-color: #ccc;
+    width: 340px;
+  }
+  .m_col_width_7:before {
+    content: "7";
+  }
+  .m_col_offset_by_7 {
+    margin-left: 360px;
+  }
+  .m_col_width_6 {
+    float: left;
+    display: inline;
+    margin: 0 0 0 10px;
+    background-color: #ccc;
+    width: 290px;
+  }
+  .m_col_width_6:before {
+    content: "6";
+  }
+  .m_col_offset_by_6 {
+    margin-left: 310px;
+  }
+  .m_col_width_5 {
+    float: left;
+    display: inline;
+    margin: 0 0 0 10px;
+    background-color: #ccc;
+    width: 240px;
+  }
+  .m_col_width_5:before {
+    content: "5";
+  }
+  .m_col_offset_by_5 {
+    margin-left: 260px;
+  }
+  .m_col_width_4 {
+    float: left;
+    display: inline;
+    margin: 0 0 0 10px;
+    background-color: #ccc;
+    width: 190px;
+  }
+  .m_col_width_4:before {
+    content: "4";
+  }
+  .m_col_offset_by_4 {
+    margin-left: 210px;
+  }
+  .m_col_width_3 {
+    float: left;
+    display: inline;
+    margin: 0 0 0 10px;
+    background-color: #ccc;
+    width: 140px;
+  }
+  .m_col_width_3:before {
+    content: "3";
+  }
+  .m_col_offset_by_3 {
+    margin-left: 160px;
+  }
+  .m_col_width_2 {
+    float: left;
+    display: inline;
+    margin: 0 0 0 10px;
+    background-color: #ccc;
+    width: 90px;
+  }
+  .m_col_width_2:before {
+    content: "2";
+  }
+  .m_col_offset_by_2 {
+    margin-left: 110px;
+  }
+  .m_col_width_1 {
+    float: left;
+    display: inline;
+    margin: 0 0 0 10px;
+    background-color: #ccc;
+    width: 40px;
+  }
+  .m_col_width_1:before {
+    content: "1";
+  }
+  .m_col_offset_by_1 {
+    margin-left: 60px;
+  }
+}

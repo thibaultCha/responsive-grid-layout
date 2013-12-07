@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <title>Less - Grid</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="grid.css">
+  <style type="text/css">
+    .container .row {
+      text-align: center;
+    }
+    footer {
+      width: 500px;
+      margin: 0 auto;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col_width_12 m_col_width_12"></div>
+    </div>
+    <div class="row">
+      <div class="col_width_6 m_col_width_3"></div>
+      <div class="col_width_6 m_col_width_3 m_col_offset_by_3"></div>
+    </div>
+    <div class="row">
+      <div class="col_width_3 m_col_width_3"></div>
+      <div class="col_offset_by_3 col_width_6 m_col_width_9"></div>
+    </div>
+    <div class="row">
+      <div class="col_width_12 m_col_width_12"></div>
+    </div>
+  </div>
+  <footer>
+    <p>Thibault Charbonnier</p>
+  </footer>
+</body>
+</html>

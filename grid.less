@@ -1,0 +1,49 @@
+* {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+.container {
+  position: relative;
+  width: 590px;
+  margin: 0 auto;
+  padding: 0;
+  .row {
+    margin: 0 0 10px -10px;
+  }
+  .column:after, .row:after { content: ' '; display: block; height: 0; clear: both; visibility: hidden; }
+}
+
+/* Loop */ 
+@nbcols: 12;
+@colwidth: 40;
+@gutterwidth: 10;
+
+.loop (@index, @type) when (@index > 0) {
+  (~".@{type}col_width_@{index}") {
+    @cumulmargin: (@index - 1)*@gutterwidth;
+    @width: @index*@colwidth+@cumulmargin; 
+    float: left;
+    display: inline;
+    margin: 0 0 0 ~"@{gutterwidth}px";
+    background-color: #ccc;
+    width: ~"@{width}px";
+  }
+  (~".@{type}col_width_@{index}:before") {
+    content: "@{index}";
+  }
+  (~".@{type}col_offset_by_@{index}") {
+    @cumulmargin: (@index + 1)*@gutterwidth;
+    @marginleft: @index*@colwidth+@cumulmargin;
+    margin-left: ~"@{marginleft}px";
+  }
+  .loop(@index - 1, @type);
+}
+
+@media (min-width:991px) {
+  .loop (@nbcols, '');
+}
+@media (max-width:990px) {
+  .loop (@nbcols, 'm_');
+}

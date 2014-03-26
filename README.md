@@ -18,10 +18,10 @@ Run the loop in a media query to benefit from responsive design:
 
 ```
 @media (min-width:981px) {
-  .loop (@nbcols, ''); // will create classes col_width_X
+  .loop(@nbcols, ''); // will create classes col_width_X
 }
 @media (max-width:980px) {
-  .loop (@nbcols, 'm_'); // will create classes m_col_width_X
+  .loop(@nbcols, 'm_'); // will create classes m_col_width_X
 }
 ```
 

@@ -1,6 +1,6 @@
 # Less Grid Responsive
 
-This is an implementation of the well-known [Less](http://lesscss.org) grid system that allows you to use media queries.
+This is an implementation of a grid system in [Less](http://lesscss.org), trying to mimic [Semantic](http://semantic.gs/).
 
 [JSFiddle demo](http://jsfiddle.net/thibaultCha/kKBZT/)
 
@@ -14,7 +14,7 @@ Override those varibles in `grid.less`:
 @gutterwidth: 10;
 ```
 
-Run the loop in a media query to benefit from responsive design:
+Run the loop in a media query to create a responsive layout:
 
 ```
 @media (min-width:981px) {

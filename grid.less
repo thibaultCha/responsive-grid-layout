@@ -15,7 +15,7 @@
   .column:after, .row:after { content: ' '; display: block; height: 0; clear: both; visibility: hidden; }
 }
 
-/* Loop */ 
+/* Loop */
 @nbcols: 12;
 @colwidth: 40;
 @gutterwidth: 10;
@@ -23,7 +23,7 @@
 .loop (@index, @type) when (@index > 0) {
   (~".@{type}col_width_@{index}") {
     @cumulmargin: (@index - 1)*@gutterwidth;
-    @width: @index*@colwidth+@cumulmargin; 
+    @width: @index*@colwidth+@cumulmargin;
     float: left;
     display: inline;
     margin: 0 0 0 ~"@{gutterwidth}px";
